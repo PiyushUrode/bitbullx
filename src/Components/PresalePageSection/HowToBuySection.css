@@ -1,0 +1,138 @@
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+ 
+
+
+
+
+/* step 2 styling  */
+
+
+
+ 
+
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+
+
+
+
+/* step 3 style */
+
+.step3_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+}
+
+.step3_info_contaner .step3_heading{
+    font-size:1.6rem;
+    font-weight: 700;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+ 
+
+
+.step3_container .step3_info_contaner{
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    text-align: start;
+    gap: 1rem;
+    font-size: 0.8rem;
+    font-weight: 200;
+    width:30%;
+}
+
+ 
+
+
+
+
+/* tab responsive */
+
+
+ 
+
+
+
+/* mobile responsive */
+
+
+@media (max-width:768px) {
+
+    /* step 1 style  */
+    
+    .HowToBuySection_container{
+        gap: 3rem;
+    }
+
+    .HowToBuySection_container .main_heading{
+        font-size: 1.7rem;
+        line-height: 1.3;
+    }
+
+  
+  
+    
+  
+
+    
+    
+
+
+    /* step 2 style  */
+
+    
+    
+    
+     
+    
+    .step2_usdt_container p{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+   
+    
+   
+   
+
+
+    /* step 3 style */
+
+
+    .step3_container{
+    flex-direction: column;
+}
+
+.step3_container .step3_info_contaner{
+    width:100%;
+}
+
+ 
+
+}

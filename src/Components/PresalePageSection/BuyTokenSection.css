@@ -1,0 +1,106 @@
+ 
+
+.BuyCoin_Section_Container{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+}
+
+.BuyCoin_Section_Container h1{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+}
+
+.BuyCoin_Section_Container p{
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+}
+
+.payment_main_container{
+    box-shadow: 0px 2px 5px 0px rgba(0,20,201,1);
+}
+ 
+
+.Buy_options_container .buy_option_imges{
+    width: 100%;
+    gap: 0.5rem;
+}
+
+
+
+
+
+/* tab responsive  */
+
+
+@media (max-width:1120px) {
+    
+    .BuyCoin_Section_Container .Buycoin_info_container h1{
+        font-size:2.3rem;
+    }
+
+    .BuyCoin_Section_Container .payment_main_container{
+        width: 55%;
+    }
+
+    .BuyCoin_Section_Container .payment_main_container section{
+        font-size: 0.8rem;
+    }
+
+    
+}
+
+
+
+/*  moble responsive */
+
+@media (max-width:768px) {
+    .BuyCoin_Section_Container{
+        flex-direction: column;
+    }
+    .BuyCoin_Section_Container .Buycoin_info_container{
+        width: 100%;
+    }
+    
+    .BuyCoin_Section_Container .Buycoin_info_container h1{
+        text-align: center;
+        font-size:2.3rem;
+        line-height: 1.3;
+    }
+
+    .BuyCoin_Section_Container .Buycoin_info_container p{
+       text-align: center;
+    }
+
+    .BuyCoin_Section_Container .Buycoin_info_container .buttons{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .BuyCoin_Section_Container .payment_main_container{
+        width: 100%;
+    }
+
+     
+    .BuyCoin_Section_Container .payment_main_container section{
+        font-size: 0.8rem;
+    }
+
+    .Buy_options_container .buy_option_imges{
+        width: 100%;
+        gap: 0.5rem;
+    }
+}
+
+
+@media (max-width:400px) {
+    .BuyCoin_Section_Container  .buy_coin_main_container{
+        font-size:0.8rem;
+       }
+    .BuyCoin_Section_Container .payment_main_container section{
+        font-size: 0.6rem;
+    }
+
+    .BuyCoin_Section_Container .buy_coin_main_container img{
+        width: 1.7rem;
+    }
+}

@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-gradient: linear-gradient(90deg, #a250ff 30.5%, #2851C5 78%);
+  --primary-color: #2851C5;
+  --secondry1-color: #ab53ea;
+  --secondry-color: #7e0eff;
+  --roadmap-gradient:linear-gradient(180deg, #FF50C5 1.24%, #0C4381 99.12%);
+  --roadmap-gradient2:linear-gradient(360deg, #FF50C5 1.24%, #0C4381 99.12%);
+
+
+  --swiper-pagination-color: var(--secondry1-color);
+  --swiper-pagination-bullet-size: 20px;
+  --swiper-pagination-bullet-width: 14px;
+  --swiper-pagination-bullet-height: 14px;
+  --swiper-pagination-bullet-inactive-color: #ffffff;
+  --swiper-pagination-bullet-inactive-opacity: 0.2;
+  --swiper-pagination-bullet-opacity: 1;
+  --swiper-pagination-bullet-horizontal-gap: 4px;
+  --swiper-pagination-bullet-vertical-gap: 6px;
+}
+ 
+body {
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+  font-family: sfPro;
+}
+.headroom {
+  z-index: 50 !important;
+}
+
+@font-face {
+  font-family: sfPro;
+  src: url(./assets/font/SFPRODISPLAYREGULAR.OTF);
+}
+
+
+
+.text-primary-gradient {
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.text-primary-gradient2 {
+  background: linear-gradient(90deg, #8b06ff 0%, #05eccd 96.4%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.border-gradient {
+  border-image:  var(--primary-gradient);
+  border-image-slice: 1;
+}
+
+
+.btn2 {
+  display: flex;
+  /* font-weight: bold; */
+  /* min-width: 120px; */
+  height: fit-content;
+  font-size: 16px;
+  padding: 6px 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #7f0fff 30.5%, #2851C5 78%);
+
+box-shadow: 0px 4px 4px 0px rgba(40, 81, 197, 0.53);
+}
+.btn2:active {
+  scale: 0.9;
+  transition: all 0.1s ease-in-out;
+}
+
+.btn3 {
+  display: flex;
+  position: relative;
+  /* font-weight: bold; */
+  /* height: auto; Changed from fit-content */
+  /* font-size: 16px; */
+  padding: 4px 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: black;
+  /* z-index: 2; */
+   
+ 
+}
+.btn3::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 3px;
+  right: 3px;
+  bottom: 0;
+  border-radius: 20px; /* Match the border radius of the button */
+  background: var(--primary-gradient) ;
+  z-index: -1; /* Place the pseudo-element behind the button */
+  /* filter: blur(5px); Create the shadow effect */
+  scale: 1.1;
+}
+.btn3:active {
+  scale: 0.9;
+  transition: all 0.1s ease-in-out;
+}
+
+
+.roadmap-shadow{
+    /* padding: 20px; */
+    background-color: rgba(0, 2, 0, 0.717);
+    box-shadow: #fbfbfb 0.5px -0.5px 1px 1px;
+}
+
+
+
+
+
+
+
+ 
